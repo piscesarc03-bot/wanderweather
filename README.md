@@ -75,3 +75,8 @@ weather-explorer/
 - Add saved travel itineraries and trip dates
 - Add user accounts and cloud-synced saved destinations
 - Add country-specific best-month recommendations based on monthly climate averages
+
+
+## Build troubleshooting
+
+The app imports the weather helpers using a relative path (`../lib/weather`) so the build does not depend on resolving the `@/` alias. The TypeScript config also sets `baseUrl` to the project root.
